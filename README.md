@@ -65,7 +65,13 @@ Before you start building something, spend some time planning what this feature 
 * It should be fat, but not lazy
 * It should not try to send other cats to Abu Dabi
 
+Postmark Bounce Handler
 
+* It should accept a post request
+* It should require a valid API token
+* It should parse the posted JSON data
+* It should alert the user of a hard bounce
+* It should reactivate a bounce if possible
 
 4.2 Build it
 
