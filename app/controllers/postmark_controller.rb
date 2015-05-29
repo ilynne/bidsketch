@@ -1,0 +1,2 @@
+class PostmarkController < ApplicationController
+end
