@@ -3,7 +3,7 @@
 Respond to this angry customer. You don't need to fix the problem, yet. Just let them know that you're sorry and working on it.
 
 "HELP!
-In fees, anywhere there should be a € symbol there is this code: &#x20AC;
+In fees, anywhere there should be a € symbol there is this code: `&#x20AC`;
 
 This is embarassing. How could you ship something so broken?
 
