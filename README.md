@@ -59,11 +59,13 @@ We use a service called Postmark to send emails. Sometimes these emails get boun
 
 Before you start building something, spend some time planning what this feature should or shouldn't do. Use the API docs as a guideline for what's possible. Keep security and the API limitations in mind. Use whatever other resources you can find to make your life easier. You should end up with a should/shouldn't list that looks something like this, but for a feature and not a cat:
 
-It should catch mice
-It should use a litter box
-It should let me know when it's hungry
-It should be fat, but not lazy
-It should not try to send other cats to Abu Dabi
+* It should catch mice
+* It should use a litter box
+* It should let me know when it's hungry
+* It should be fat, but not lazy
+* It should not try to send other cats to Abu Dabi
+
+
 
 4.2 Build it
 
