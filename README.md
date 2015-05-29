@@ -9,15 +9,17 @@ This is embarassing. How could you ship something so broken?
 
 -Ruben"
 
-I'm really sorry! I agree, this is embarrassing.
-
-I'm looking into this now. You will be the first to know when this issue is resolved. If it is not fixed by 4:00 pm, I will update you.
-
-Again, please accept my apology. I will take care of this.
+> I'm really sorry! I agree, this is embarrassing.
+> 
+> I'm looking into this now. You will be the first to know when this issue is resolved. If it is not fixed by 4:00 pm, I will update you.
+> 
+> Again, please accept my apology. I will take care of this.
 
 2. Diagnose the Ticket
 
 At a glance, what do you think is wrong in that ticket?
+
+> There is a character encoding problem somewhere. It could be in the database, it could be in the html character set, it could be that the html entity is simply escaped, or maybe a gem is causing the problem.
 
 3. Code Review
 
