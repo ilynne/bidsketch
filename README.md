@@ -68,7 +68,7 @@ Before you start building something, spend some time planning what this feature 
 Postmark Bounce Handler
 
 * It should accept a post request
-* It should require a valid API token
+* It should require a valid ip address
 * It should parse the posted JSON data
 * It should alert the user of a hard bounce
 * It should reactivate a bounce if possible
