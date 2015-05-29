@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe PostmarkController, type: :controller do
   describe 'a request from an invalid server' do
     it 'should return an unauthorized response' do
+      @json_data = { "ID" => "42" }
       post 'bounce_handler', format: :json, :d => @json_data
       expect(response.status).to eq(401)
     end

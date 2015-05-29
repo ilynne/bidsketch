@@ -80,3 +80,17 @@ Give yourself an hour or two to build something that matches up with your requir
 4.3 Write about it
 
 When you're done (doesn't have to be complete - don't go past two hours writing the code), bundle up the code and the requirements along with a short write-up of summarizing your work. I'm looking for introspection and honesty as much as code quality, so be sure to include things that got in your way and why.
+
+> Webhooks are notoriously challenging to test. Before they go into production, they should really be tested thoroughly on a public staging server. For local development, I rely on Rspec. There are only four tests because I combined expectations for the first authorized request.
+> 
+> I used the remote ip address for security. Before this went into production I would probably require https. The sample code on Postmark's site includes an ID -- if that matches an associated object id on Bidsketch, it would be worth checking that the id and email match. These are just security ideas off the top of my head.
+> 
+> I only handled two bounce types -- HardBounce and Transient. At this point I think it would be a good idea to stop and refactor. For example, the emails sent to admins should probably contain all the JSON data posted. An after_filter might be better suited to sending any notifications. The tests are definitely in need of refactoring.
+> 
+> I would need more time to play with Postmark's API to understand how to reactivate a hard bounce. I'm not sure what to do with unknown users or mailboxes not found other than notify the user (sender) to confirm the address before trying again.
+> 
+> ChallengeVerification emails would be fairly straightforward to address, as long as we get the necessary information to resend.
+> 
+> I might move require_postmark_ip to the application controller and refactor it to use an ip_address parameter. It might be useful in other webhooks.
+> 
+> Obviously, this has a lot more work to be done. Overall, I'm happy with this beginning point. That opinion could change once I see the rest of the site.
